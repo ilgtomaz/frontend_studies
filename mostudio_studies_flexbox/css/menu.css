@@ -1,0 +1,109 @@
+body {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.menu {
+  display: flex;
+  background: #000000;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 40px 30px;
+  position: fixed;
+  width: 25%;
+}
+
+.menu_subMenu {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  justify-content: space-between;
+}
+
+.menu_subMenu_titulo {
+  background-clip: text;
+  background-image: url('../img/imagem_porSol.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu_subMenu_titulo a {
+  text-decoration: none;
+}
+
+.menu_subMenu_list {
+  height: 80%;
+}
+
+.menu_subMenu_list ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.menu_subMenu_list ul li {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu_subMenu_list ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.menu_subMenu_list ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.menu_subMenu_list ul li a:hover {
+  color: #F3C623 !important;
+  border-bottom: 2px solid #F3C623;
+}
+
+.menu_downSubMenu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  height: 35%;
+  justify-content: space-around;
+}
+
+.menu_downSubMenu form fieldset legend {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.menu_downSubMenu_emailNewsletter {
+  background-color: #000000;
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  padding: 15px;
+}
+
+.menu_downSubMenu_copyright {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.link_colorlib {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu_subMenu_list_link_active {
+  color: #F3C623 !important;
+  border-bottom: 2px solid #F3C623;
+  /* text-decoration: underline !important; */
+}

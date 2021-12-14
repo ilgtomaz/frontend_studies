@@ -1,0 +1,130 @@
+.content_row {
+  background: #111111;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", Arial, sans-serif;
+  height: 100vh;
+  width: 75%;
+  margin-left: 25%;
+}
+
+.content_row:nth-child(2n) {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.content_row:nth-child(2n) .content_description_text:after {
+  left: auto;
+  right: 0;
+}
+
+.content_row:nth-child(2n) .content_description_text {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.content_photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50%;
+}
+
+.content_photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.content_description {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.content_description_content {
+  margin: 0 auto;
+  height: auto;
+  width: 75%;
+}
+
+.content_description_title_head {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.content_description_title {
+  margin-bottom: 25px;
+}
+
+.content_description_title a {
+  color: #FFFFFF;
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  line-height: 1.3em;
+  text-decoration: none;
+}
+
+.content_description_text {
+  position: relative;
+  padding-left: 20px;
+  margin: 0 0 30px;
+}
+
+.content_description_text p {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.content_description_text:after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: '';
+  width: 2px;
+  height: 40px;
+  background: #F3C623
+}
+
+.content_description_link_portfolio {
+  border: 1px solid #F3C623;
+  color: #F3C623;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content_load_new {
+  align-items: center;
+  background-color: #F3C623;
+  display: flex;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  height: 70px;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin-left: 25%;
+  text-transform: uppercase;
+}
+
+.content_load_new a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.content_load_new a span {
+  font-size: 16px;
+}
