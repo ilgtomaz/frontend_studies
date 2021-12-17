@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mostudio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/pages/contactPage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="menu">
+    <div class="menu_subMenu">
+      <h1 class="menu_subMenu_titulo">
+        <a href="index.html">Mostudio</a>
+      </h1>
+      
+      <nav class="menu_subMenu_list">
+        <ul>
+          <li><a id="home" class="menu_subMenu_list_link_menu" href="index.html">Home</a></li>
+          <li><a id="gallery" class="menu_subMenu_list_link_menu" href="gallery.html">Gallery</a></li>
+          <li><a id="about" class="menu_subMenu_list_link_menu" href="about.html">About</a></li>
+          <li><a id="contact" class="menu_subMenu_list_link_menu menu_subMenu_list_link_active" href ="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu_downSubMenu">
+      <form>
+        <fieldset>
+          <legend>Subscribe for newsletter</legend>
+          <input type="email" name="email" class="menu_downSubMenu_emailNewsletter" placeholder="Enter Email Address">
+        </fieldset>
+      </form>
+      
+      <p class="menu_downSubMenu_copyright">
+        Copyright ©2021 All rights reserved | This template is made with 💙 by <a class="link_colorlib" href="https://colorlib.com/" target="_blank" rel="noopener noreferrer">Colorlib.com</a> and replied as case study (only template and images) by Igor Tomaz.
+      </p>
+    </div>
+  </section>
+  <section class="content">
+    <div class="content_contact_infos">
+      <p class="content_contact_infos_title">Let's get in touch</p>
+      <p class="content_contact_infos_description">We're open for any suggestion or just to have a chat</p>
+      <div class="content_contact_infos_types">
+        <div class="content_contact_infos_block_content">
+          <p><span class="fa fa-map-marker fa-lg"></span></p>
+          <p class="content_contact_infos_block_content_text"><strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+        </div>
+        <div class="content_contact_infos_block_content">
+          <p><span class="fa fa-phone fa-lg"></span></p>
+          <p class="content_contact_infos_block_content_text"><strong>Phone:</strong> + 1235 2355 98</p>
+        </div>
+        <div class="content_contact_infos_block_content">
+          <p><span class="fa fa-paper-plane fa-lg"></span></p>
+          <p class="content_contact_infos_block_content_text"><strong>Email:</strong> info@yoursite.com</p>
+        </div>
+        <div class="content_contact_infos_block_content">
+          <p><span class="fa fa-globe fa-lg"></span></p>
+          <p class="content_contact_infos_block_content_text"><strong>Website:</strong> yoursite.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="content_contact_form">
+      <p class="content_contact_form_title">Get in touch</p>
+
+      <form>
+        <div class="content_contact_form_half_inputs">
+          <fieldset>
+            <legend class="content_contact_form_legend">full name</legend>
+            <input type="text" name="fullName" id="fullName" class="content_contact_form_input" placeholder="Name">
+          </fieldset>
+  
+          <fieldset>
+            <legend class="content_contact_form_legend">e-mail address</legend>
+            <input type="text" name="email" id="email" class="content_contact_form_input" placeholder="E-mail">
+          </fieldset>
+        </div>
+
+        <fieldset>
+          <legend class="content_contact_form_legend">subject</legend>
+          <input type="text" name="subject" id="subject" class="content_contact_form_input" placeholder="Subject">
+        </fieldset>
+
+        <fieldset>
+          <legend class="content_contact_form_legend">Message</legend>
+          <textarea name="message" id="message" cols="30" rows="6" placeholder="Message" class="content_contact_form_textarea"></textarea>
+        </fieldset>
+
+        <button type="submit" class="content_contact_form_button">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
