@@ -1,0 +1,49 @@
+.destaques {
+  background-color: var(--azulClaro);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 0 2rem 0;
+}
+
+.destaques__titulo {
+  color: var(--cinzaEscuro);
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.destaques__painel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.destaques_painel-imagem {
+  box-shadow: 0 2px 10px 5px #00000020;
+  margin-bottom: .5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.destaques_painel-texto {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 6%;
+}
+
+.destaques__botao {
+  border-color: var(--vermelhoForte);
+  color: var(--vermelhoForte);
+  margin: 0 auto;
+}
+
+.destaques__botao:hover {
+  background-color: var(--vermelhoForte);
+  border: 1px solid var(--azulClaro);
+  color: var(--azulClaro);
+}

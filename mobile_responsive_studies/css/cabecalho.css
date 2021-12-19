@@ -1,0 +1,25 @@
+.cabecalho {
+  align-items: center;
+  background-color: var(--bgChamadaMobile);
+  border-bottom: 1px solid var(--bordaCabecalhoMobile);
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  padding: .75em 0;
+  position: absolute;
+  width: 100%;
+}
+
+.cabecalho__logo {
+  margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+  text-align: center;
+}
+
+.cabecalho__link {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 .7rem 1.25rem .7rem;
+}

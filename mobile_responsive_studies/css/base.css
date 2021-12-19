@@ -1,0 +1,34 @@
+:root {
+  --branco: #FFF;
+  --azulClaro: #F5FBFF;
+  --vermelhoForte: #B72E2E;
+  --cinzaEscuro: #4F4C4C;
+  --cinzaClaro: #F7F4F4;
+  --cinzaMedio: #D9D9D9;
+  --fonteLink: #0084FF;
+  --fonteCinza: #666;
+  --bordaCabecalhoMobile: #103D4A;
+  --bgRodape: #333;
+  --bgChamadaMobile: #00161C;
+  --planosCartaoStart: #56CCF2;
+  --planosCartaoUltra: #B04CD9;
+  --planosCartaoMega: #E33B3B;
+  
+  --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.botao {
+  border: 1px solid var(--branco);
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  max-width: 350px;
+  padding: 1rem 2rem;
+  transition: 400ms;
+  width: 100%;
+}

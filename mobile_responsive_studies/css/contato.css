@@ -1,0 +1,23 @@
+.contato {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contato__titulo {
+  color: var(--cinzaEscuro);
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contato__botao {
+  border-color: var(--cinzaEscuro);
+  color: var(--cinzaEscuro);
+  margin-top: 1rem;
+}

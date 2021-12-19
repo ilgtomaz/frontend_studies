@@ -1,0 +1,31 @@
+.sobre {
+  padding: .5rem 6%;
+}
+
+.sobre__titulo {
+  color: var(--cinza-escuro);
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sobre__texto {
+  line-height: normal;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sobre__texto--destaque {
+  color: var(--cinza-escuro);
+  font-weight: 700;
+}
+
+.sobre__plataformas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2.5rem 0;
+}
