@@ -1,0 +1,135 @@
+/* Backlog Css */
+.container {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ordersContent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 25%;
+}
+
+.ordersContent__filters {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  justify-content: center;
+  width: 100%;
+}
+
+.ordersContent__filters__title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ordersContent__filters__selectType {
+  border: 1px solid var(--neutral3Color);
+  border-radius: .25rem;
+  padding: .50rem;
+}
+
+.ordersContent__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ordersContent__content__order {
+  background-color: var(--lightOrangeWithOpacity);
+  border: 1px solid var(--originalOrange);
+  border-radius: .25rem;
+  box-shadow: 10px 5px 5px black;
+  cursor: pointer;
+  padding: .75rem;
+  width: 200px;
+  margin: .50rem 0;
+}
+
+.ordersContent__content__order--dragged {
+  margin: .75rem 0;
+}
+
+.ordersContent__content__order--draggedBack {
+  margin: .50rem 0;
+  padding: .50rem;
+}
+
+
+/* .ordersContent__content__order__dragOver {
+  border: 3px dotted #666;
+} */
+
+.ordersContent__content__order__title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin-bottom: .50rem;
+  text-align: center;
+}
+
+.ordersContent__content__order__date, 
+.ordersContent__content__order__type, 
+.ordersContent__content__order__description {
+  margin-bottom: .25rem;
+}
+
+/* Week Css */
+.weekContent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: .75rem;
+  width: 75%;
+}
+
+.weekContent__filters {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  justify-content: center;
+  width: 100%;
+}
+
+.weekContent__filters__title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.weekContent__filters_content_filter {
+  border: 1px solid var(--neutral3Color);
+  border-radius: .25rem;
+  padding: .50rem;
+}
+
+.weekContent__daysOfWeek {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.weekContent__daysOfWeek__day {
+  border: 1px solid black;
+  padding: .50rem;
+  width: 25%;
+}
+
+.weekContent__daysOfWeek__day__title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.15em;
+  font-weight: 700;
+  margin-top: .25rem;
+  padding: .50rem;
+  text-align: center;
+}

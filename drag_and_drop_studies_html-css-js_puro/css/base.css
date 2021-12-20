@@ -1,0 +1,62 @@
+:root {
+  /* -- Colors -- */
+  --errorColor: #F0321E;
+  --neutral0Color: #FFFFFF;
+  --neutral2Color: #D1D3D6;
+  --neutral3Color: #A8AEB7;
+  --neutral4Color: #616771;
+  --neutral5Color: #353C47; 
+
+  /* Brand Palette */
+  /* Orange */
+  --darkOrange: #C8471D;
+  --originalOrange: #FA551E;
+  --lightOrange: #FFD4C6;
+  --lightOrangeWithOpacity: rgba(255, 212, 198, 0.3);
+
+  /* Grey */
+  --darkGrey: #2B3545;
+  --originalGrey: #5A6473;
+  --lightGrey: #E7E9EC;
+
+  /* Red */
+  --darkRed: #9B0F01;
+  --originalRed: #F0321E;
+  --lightRed: #FBEAEA;
+
+  /* Yellow */
+  --darkYellow: #D88D00;
+  --originalYellow: #FAAA14;
+  --lightYellow: #FDF6E5;
+
+  /* Extended Palette */
+  /* Green */
+  --darkGreen: #00841C;
+  --originalGreen: #28B446;
+  --lightGreen: #E2F1E7;
+
+  /* Blue */
+  --darkBlue: #004694;
+  --originalBlue: #1E6EC8;
+  --lightBlue: #E1EAF4;
+
+  /* Purple */
+  --darkPurple: #452D65;
+  --originalPurple: #502D7F;
+  --lightPurple: #E6E4ED;
+
+  /* Semantic Pallete */
+  --infoBase: #1E6EC8;
+  --infoLightBase: #E5F5FC;
+
+  --successBase: #28B446;
+  --successLightBase: #EAF2EB;
+
+  --warningBase: #FAAA14;
+  --warningLightBase: #FDF6E5;
+
+  --errorBase: #F0321E;
+  --errorLightBase: #FBEAEA;
+
+  /* ----- */
+}

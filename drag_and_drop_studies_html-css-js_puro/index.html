@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo Drag and Drop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/dragAndDrop.css">
+</head>
+<body>
+  <main class="container">
+    <section class="ordersContent">
+      <div class="ordersContent__filters">
+        <p class="ordersContent__filters__title">Backlog Semanal</p>
+        <div class="ordersContent__filters__selectField">
+          <label>Ordenar por</label>
+          <select name="orderBy" class="ordersContent__filters__selectType">
+            <option value="1">Priority 1</option>
+            <option value="2">Priority 2</option>
+            <option value="3">Priority 3</option>
+            <option value="4">Priority 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="ordersContent__content">
+      </div>
+    </section>
+    <seciton class="weekContent">
+      <div class="weekContent__filters">
+        <p class="weekContent__filters__title">Filtros</p>
+        <div class="weekContent__filters_content">
+          <label>Filtro exemplo</label>
+          <select class="weekContent__filters_content_filter">
+            <option value="exemplo1">Exemplo 1</option>
+            <option value="exemplo2">Exemplo 2</option>
+            <option value="exemplo3">Exemplo 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="weekContent__daysOfWeek">
+        <div class="weekContent__daysOfWeek__day">
+          <p class="weekContent__daysOfWeek__day__title">Dia 1</p>
+        </div>
+        <div class="weekContent__daysOfWeek__day">
+          <p class="weekContent__daysOfWeek__day__title">Dia 2</p>
+        </div>
+        <div class="weekContent__daysOfWeek__day">
+          <p class="weekContent__daysOfWeek__day__title">Dia 3</p>
+        </div>
+        <div class="weekContent__daysOfWeek__day">
+          <p class="weekContent__daysOfWeek__day__title">Dia 4</p>
+        </div>
+        <div class="weekContent__daysOfWeek__day">
+          <p class="weekContent__daysOfWeek__day__title">Dia 5</p>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="js/dragAndDrop.js"></script>
+    </seciton>
+  </main>
+</body>
+</html>
