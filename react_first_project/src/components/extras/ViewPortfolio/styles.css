@@ -1,0 +1,11 @@
+.view__portfolio__link {
+  border: 1px solid #F3C623;
+  color: #F3C623;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
