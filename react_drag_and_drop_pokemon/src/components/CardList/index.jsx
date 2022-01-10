@@ -4,7 +4,7 @@ import Card from "../../patterns/Card";
 import { columns } from "../../constants/dragAndDrop";
 import "./style.css";
 
-class ListCards extends Component {
+class CardList extends Component {
   constructor(props) {
     super(props);
     this.state = { cards: [] };
@@ -29,7 +29,7 @@ class ListCards extends Component {
     const { cards } = this.state;
     return (
       <CustomDroppable droppableId={columns['sideBar'].id}>
-        <div className="conteudo__principal__sideBar__listCards">
+        <div className="conteudo__principal__sideBar__cardList">
           {cards.map((card, index) => {
             return <Card key={card.uniqueId} card={card} index={index} />
           })}
@@ -39,4 +39,4 @@ class ListCards extends Component {
   }
 }
 
-export default ListCards;
+export default CardList;

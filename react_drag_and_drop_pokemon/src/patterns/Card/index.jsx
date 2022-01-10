@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CustomDraggable from "../../components/CustomDraggable";
 import { ReactComponent as PokeballLogo } from "../../assets/img/pokeball_logo.svg";
-import ListTypes from "../../components/ListTypes";
+import TypeList from "../../components/TypeList";
 import "./style.css";
 
 class Card extends Component {
@@ -42,7 +42,7 @@ class Card extends Component {
                 #{id}
               </p>
               <p className="conteudo__principal__sideBar__card__name">{name}</p>
-              <ListTypes types={types} />
+              <TypeList types={types} />
             </div>
             <PokeballLogo className="conteudo__principal__sideBar__card__logo" />
             <img

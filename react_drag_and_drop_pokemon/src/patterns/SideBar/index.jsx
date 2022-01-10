@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ListCards from "../../components/ListCards";
+import CardList from "../../components/CardList";
 import "./style.css";
 
 class SideBar extends Component {
@@ -8,7 +8,7 @@ class SideBar extends Component {
     return (
       <section className="conteudo__principal__sideBar">
         <p className="conteudo__principal__sideBar__title">Cards</p>
-        <ListCards cards={cards}></ListCards>
+        <CardList cards={cards}></CardList>
       </section>
     );
   }

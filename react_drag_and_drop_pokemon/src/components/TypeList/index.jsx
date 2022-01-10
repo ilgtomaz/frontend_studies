@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Type from "../Type";
 import "./style.css";
 
-class ListTypes extends Component {
+class TypeList extends Component {
   render() {
     const { types } = this.props;
     return (
@@ -15,4 +15,4 @@ class ListTypes extends Component {
   }
 }
 
-export default ListTypes;
+export default TypeList;

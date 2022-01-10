@@ -5,11 +5,11 @@ class CardList {
   }
 
   addNewCard(data) {
-    const novoCard = new Card(data);
-    const isAlreadyAddedCard = this.items.find(item => item.id === novoCard.id);
+    const newCard = new Card(data);
+    const isAlreadyAddedCard = this.items.find(item => item.id === newCard.id);
 
     if (!isAlreadyAddedCard) {
-      this.items.push(novoCard);
+      this.items.push(newCard);
       this.notify();
     } else {
       //TODO notificar existencia do card
