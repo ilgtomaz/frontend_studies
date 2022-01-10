@@ -1,0 +1,41 @@
+:root {
+  /* Type colors */
+  --grassTypeColor: #62B957;
+  --poisonTypeColor: #A552CC;
+  --fireTypeColor: #FD7D24;
+  --waterTypeColor: #58ABF6;
+  --bugTypeColor: #8CB230;
+  --flyingTypeColor: #748FC9;
+  --normalTypeColor: #9DA0AA;
+  --electricTypeColor: #EED535;
+  --groundTypeColor: #DD7748;
+  --fairyTypeColor: #ED6EC7;
+  --fightingTypeColor: #D04164;
+  --psychicTypeColor: #EA5D60;
+  --rockTypeColor: #BAAB82;
+  --iceTypeColor: #61CEC0;
+  --dragonTypeColor: #0F6AC0;
+  --steelTypeColor: #417D9A;
+  --darkTypeColor: #58575F;
+  --ghostTypeColor: #556AAE;
+
+  /* Card colors */
+  --grassCardColor: #8BBE8A;
+  --poisonCardColor: #9F6E97;
+  --fireCardColor: #FFA756;
+  --waterCardColor: #83A2E3;
+  --bugCardColor: #8BD674;
+  --flyingCardColor: #83A2E3;
+  --normalCardColor: #B5B9C4;
+  --electricCardColor: #F2CB55;
+  --groundCardColor: #F78551;
+  --fairyCardColor: #EBA8C3;
+  --fightingCardColor: #EB4971;
+  --psychicCardColor: #FF6568;
+  --rockCardColor: #D4C294;
+  --iceCardColor: #91D8DF;
+  --dragonCardColor: #7383B9;
+  --steelCardColor: #4C91B2;
+  --darkCardColor: #6F6E78;
+  --ghostCardColor: #8571BE;
+}

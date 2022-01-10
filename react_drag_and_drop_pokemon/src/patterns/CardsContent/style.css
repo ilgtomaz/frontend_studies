@@ -1,0 +1,10 @@
+.conteudo__principal__cardsContent {
+  background-color: lightblue;
+  height: 100vh;
+  margin-left: 30%;
+  margin-top: 150px;
+  overflow: auto;
+  position: fixed;
+  width: 70%;
+  z-index: -1;
+}

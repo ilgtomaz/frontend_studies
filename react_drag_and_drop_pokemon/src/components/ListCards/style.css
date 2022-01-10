@@ -1,0 +1,6 @@
+.conteudo__principal__sideBar__listCards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,149 @@
+.conteudo__principal__sideBar__card {
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'SF Pro Display', sans-serif;
+  height: 180px;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+  transition: border-radius 400ms;
+  width: 90%;
+}
+
+.conteudo__principal__sideBar__card:hover {
+  border-radius: 10px;
+}
+
+.conteudo__principal__sideBar__card__info p:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.conteudo__principal__sideBar__card__info p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.conteudo__principal__sideBar__card__logo {
+  height: 180px;
+  position: absolute;
+  margin-right: 5px;
+  right: 0;
+  width: 180px;
+  z-index: 1;
+}
+
+.conteudo__principal__sideBar__card__logo path {
+  fill:rgba(254, 254, 254, 0.4)
+}
+
+.conteudo__principal__sideBar__card__image {
+  filter: grayscale(100%);
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  transition: bottom 400ms, filter 400ms;
+  width: 200px;
+  z-index: 2;
+}
+
+.conteudo__principal__sideBar__card__image__hover {
+  bottom: 15px;
+  filter: grayscale(0%);
+}
+
+.conteudo__principal__sideBar__card__number {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.conteudo__principal__sideBar__card__name {
+  color: #FFFFFF;
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.conteudo__principal__sideBar__card__type__icon {
+  height: 18px;
+  width: 18px;
+}
+
+.conteudo__principal__sideBar__card__type__icon path {
+  fill: #FFFFFF;
+}
+
+.conteudo__principal__sideBar__card_grass {
+  background-color: var(--grassCardColor);
+}
+
+.conteudo__principal__sideBar__card_poison {
+  background-color: var(--poisonCardColor);
+}
+
+.conteudo__principal__sideBar__card_fire {
+  background-color: var(--fireCardColor);
+}
+
+.conteudo__principal__sideBar__card_water {
+  background-color: var(--waterCardColor);
+}
+
+.conteudo__principal__sideBar__card_bug {
+  background-color: var(--bugCardColor);
+}
+
+.conteudo__principal__sideBar__card_flying {
+  background-color: var(--flyingCardColor);
+}
+
+.conteudo__principal__sideBar__card_normal {
+  background-color: var(--normalCardColor);
+}
+
+.conteudo__principal__sideBar__card_electric {
+  background-color: var(--electricCardColor);
+}
+
+.conteudo__principal__sideBar__card_ground {
+  background-color: var(--groundCardColor);
+}
+
+.conteudo__principal__sideBar__card_fairy {
+  background-color: var(--fairyCardColor);
+}
+
+.conteudo__principal__sideBar__card_fighting {
+  background-color: var(--fightingCardColor);
+}
+
+.conteudo__principal__sideBar__card_psychic {
+  background-color: var(--psychicCardColor);
+}
+
+.conteudo__principal__sideBar__card_rock {
+  background-color: var(--rockCardColor);
+}
+
+.conteudo__principal__sideBar__card_ice {
+  background-color: var(--iceCardColor);
+}
+
+.conteudo__principal__sideBar__card_dragon {
+  background-color: var(--dragonCardColor);
+}
+
+.conteudo__principal__sideBar__card_steel {
+  background-color: var(--steelCardColor);
+}
+
+.conteudo__principal__sideBar__card_dark {
+  background-color: var(--darkCardColor);
+}
+
+.conteudo__principal__sideBar__card_ghost {
+  background-color: var(--ghostCardColor);
+}

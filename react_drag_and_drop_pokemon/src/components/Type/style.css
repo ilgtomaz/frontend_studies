@@ -1,0 +1,90 @@
+.conteudo__principal__sideBar__card__type {
+  align-items: center;
+  border-radius: 2px;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.conteudo__principal__sideBar__card__type:nth-child(1) {
+  margin-right: 5px;
+}
+
+.conteudo__principal__sideBar__card__type span {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+
+.conteudo__principal__sideBar__card__type__grass {
+  background-color: var(--grassTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__poison {
+  background-color: var(--poisonTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__fire {
+  background-color: var(--fireTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__water {
+  background-color: var(--waterTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__bug {
+  background-color: var(--bugTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__flying {
+  background-color: var(--flyingTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__normal {
+  background-color: var(--normalTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__electric {
+  background-color: var(--electricTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__ground {
+  background-color: var(--groundTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__fairy {
+  background-color: var(--fairyTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__fighting {
+  background-color: var(--fightingTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__psychic {
+  background-color: var(--psychicTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__rock {
+  background-color: var(--rockTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__ice {
+  background-color: var(--iceTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__dragon {
+  background-color: var(--dragonTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__steel {
+  background-color: var(--steelTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__dark {
+  background-color: var(--darkTypeColor);
+}
+
+.conteudo__principal__sideBar__card__type__ghost {
+  background-color: var(--ghostTypeColor);
+}
