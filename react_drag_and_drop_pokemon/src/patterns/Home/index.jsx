@@ -4,14 +4,14 @@ import axios from "axios";
 import SearchBar from "../SearchBar";
 import SideBar from "../SideBar";
 import CardsContent from "../CardsContent";
-import ListaCards from "../../data/ListaCards";
+import CardList from "../../data/CardList";
 import { columns } from "../../constants/dragAndDrop";
 import "./style.css";
 
 class Home extends Component {
   constructor() {
     super();
-    this.cards = new ListaCards();
+    this.cards = new CardList();
   }
 
   _addNewCard(data) {

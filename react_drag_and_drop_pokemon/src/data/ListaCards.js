@@ -1,4 +1,4 @@
-class ListaCards {
+class CardList {
   constructor() {
     this.items = [];
     this._inscritos = [];
@@ -86,4 +86,4 @@ class Card {
 
 }
 
-export default ListaCards;
+export default CardList;
