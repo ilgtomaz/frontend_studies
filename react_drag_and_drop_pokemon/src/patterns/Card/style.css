@@ -54,7 +54,9 @@
 }
 
 .conteudo__principal__sideBar__card__number {
+  align-items: center;
   color: rgba(0, 0, 0, 0.6);
+  display: flex;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: .05em;
@@ -146,4 +148,24 @@
 
 .conteudo__principal__sideBar__card_ghost {
   background-color: var(--ghostCardColor);
+}
+
+.conteudo__principal__sideBar__card__edit {
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  height: 25px;
+  justify-content: center;
+  margin-left: 5px;
+  width: 25px;
+}
+
+.conteudo__principal__sideBar__card__edit__element {
+  color: black;
+  font-size: 14px;
+  transition: font-size 400ms;
+}
+
+.conteudo__principal__sideBar__card__edit__element:hover {
+  font-size: 24px;
 }

@@ -4,11 +4,11 @@ import "./style.css";
 
 class SideBar extends Component {
   render() {
-    const { cards } = this.props;
+    const { cards, changeModalStatus } = this.props;
     return (
       <section className="conteudo__principal__sideBar">
         <p className="conteudo__principal__sideBar__title">Cards</p>
-        <CardList cards={cards}></CardList>
+        <CardList cards={cards} changeModalStatus={changeModalStatus} ></CardList>
       </section>
     );
   }
