@@ -22,7 +22,12 @@ class CustomDroppable extends Component {
                   ref,
                   ...droppableProps,
                 },
-                [...child.props.children, cloneElement(placeholder, { key: child.props.children.length })]
+                [
+                  ...child.props.children,
+                  cloneElement(placeholder, {
+                    key: child.props.children.length,
+                  }),
+                ]
               );
             }
           });

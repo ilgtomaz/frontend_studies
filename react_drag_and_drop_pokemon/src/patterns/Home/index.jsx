@@ -14,6 +14,8 @@ class Home extends Component {
     super();
     this.addNewAlerts = this.addNewAlerts.bind(this);
     this.sideBarCards = new CardList(this.addNewAlerts);
+    this.cardsContentId1 = new CardList(this.addNewAlerts);
+    this.cardsContentId2 = new CardList(this.addNewAlerts);
     this.state = { alerts: [], isShow: false, card: {} };
     this.modalRef = createRef(null);
   }
@@ -49,15 +51,19 @@ class Home extends Component {
     }
 
     const isShow = !this.state.isShow;
-    this.setState({ ...this.state, 
-      isShow,
-      card
-     });
+    this.setState({ ...this.state, isShow, card });
   }
 
   render() {
     columns["sideBar-id"].card = this.sideBarCards;
     columns["sideBar-id"].elements = this.sideBarCards.items;
+
+    columns["cardsContent-id-1"].card = this.cardsContentId1;
+    columns["cardsContent-id-1"].elements = this.cardsContentId1.items;
+
+    columns["cardsContent-id-2"].card = this.cardsContentId2;
+    columns["cardsContent-id-2"].elements = this.cardsContentId2.items;
+
     return (
       <main className="conteudo">
         <SearchBar addNewCard={this.addNewCard.bind(this)} />
@@ -67,7 +73,7 @@ class Home extends Component {
               cards={this.sideBarCards}
               changeModalStatus={this.changeModalStatus.bind(this)}
             />
-            <CardsContent columns={columns}/>
+            <CardsContent columns={columns} />
           </section>
         </CustomDragDropContext>
         <Modal

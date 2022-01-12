@@ -4,6 +4,33 @@ import CustomDroppable from "../../components/CustomDroppable";
 import "./style.css";
 
 class CardsContent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { usingCards: [], usedCards: [] }
+    this._addNewUsingCards = this._addNewUsingCards.bind(this);
+    this._addNewUsedCards = this._addNewUsedCards.bind(this);
+  }
+
+  componentDidMount() {
+    const { columns } = this.props;
+    columns["cardsContent-id-1"].card.subscribe(this._addNewUsingCards);
+    columns["cardsContent-id-2"].card.subscribe(this._addNewUsedCards);
+  }
+
+  componentWillUnmount() {
+    const { columns } = this.props;
+    columns["cardsContent-id-1"].card.unsubscribe(this._addNewUsingCards);
+    columns["cardsContent-id-2"].card.unsubscribe(this._addNewUsedCards);
+  }
+
+  _addNewUsingCards(usingCards) {
+    this.setState({ ...this.state, usingCards });
+  }
+
+  _addNewUsedCards(usedCards) {
+    this.setState({ ...this.state, usedCards });
+  }
+
   render() {
     const { columns } = this.props;
     return (

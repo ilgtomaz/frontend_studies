@@ -25,6 +25,10 @@ export class CardList {
     }
   }
 
+  addNewAlreadyCreatedCard(card) {
+    this.items.push(card);
+  }
+
   subscribe(callback) {
     this._inscritos.push(callback);
   }
