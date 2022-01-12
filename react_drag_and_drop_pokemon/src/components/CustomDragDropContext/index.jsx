@@ -4,7 +4,6 @@ import { DragDropContext } from "react-beautiful-dnd";
 class CustomDragDropContext extends Component {
   _onDragEnd(result) {
     const { destination, source, draggableId } = result;
-    const { column } = this.props;
 
     if (!destination) {
       return;
@@ -17,17 +16,23 @@ class CustomDragDropContext extends Component {
       return;
     }
 
-    const elementsId = column.getElementsIds();
-    elementsId.splice(source.index, 1);
-    elementsId.splice(destination.index, 0, draggableId);
+    const { columns } = this.props;
+    const start = columns[source.droppableId];
+    const finish = columns[destination.droppableId];
+    const startElementsId = start.getElementsIds();
 
-    const newCards = elementsId.map(id => {
-      return column.elements.find(element => element.uniqueId === id);
-    });
+    if (start === finish) {
+      startElementsId.splice(source.index, 1);
+      startElementsId.splice(destination.index, 0, draggableId);
 
-    column.elements = newCards;
-    column.card.items = newCards;
-    column.card.notify();
+      const newCards = startElementsId.map(id => {
+        return start.elements.find(element => element.uniqueId === id);
+      });
+
+      start.elements = newCards;
+      start.card.items = newCards;
+      start.card.notify();
+    }
   }
 
   render() {

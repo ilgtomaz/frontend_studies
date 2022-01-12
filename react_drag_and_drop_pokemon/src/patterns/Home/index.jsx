@@ -61,13 +61,13 @@ class Home extends Component {
     return (
       <main className="conteudo">
         <SearchBar addNewCard={this.addNewCard.bind(this)} />
-        <CustomDragDropContext column={columns["sideBar-id"]}>
+        <CustomDragDropContext columns={columns}>
           <section className="conteudo__principal">
             <SideBar
               cards={this.sideBarCards}
               changeModalStatus={this.changeModalStatus.bind(this)}
             />
-            <CardsContent />
+            <CardsContent columns={columns}/>
           </section>
         </CustomDragDropContext>
         <Modal
