@@ -10,7 +10,7 @@ class CustomDragDropContext extends Component {
     }
 
     if (
-      destination.draggableId === source.draggableId &&
+      destination.droppableId === source.droppableId &&
       destination.index === source.index
     ) {
       return;
