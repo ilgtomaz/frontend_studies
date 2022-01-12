@@ -1,0 +1,10 @@
+.title {
+  background-color: black;
+  border-radius: 5px;
+  color: #F5F5F5;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+}

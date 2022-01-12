@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardList from "../../components/CardList";
+import Title from "../../components/Title";
 import "./style.css";
 
 class SideBar extends Component {
@@ -7,7 +8,7 @@ class SideBar extends Component {
     const { cards, changeModalStatus } = this.props;
     return (
       <section className="conteudo__principal__sideBar">
-        <p className="conteudo__principal__sideBar__title">Cards</p>
+        <Title content={`Cards`} />
         <CardList cards={cards} changeModalStatus={changeModalStatus} ></CardList>
       </section>
     );

@@ -56,12 +56,12 @@ class Home extends Component {
   }
 
   render() {
-    columns["sideBar"].card = this.cards;
-    columns["sideBar"].elements = this.cards.items;
+    columns["sideBar-id"].card = this.cards;
+    columns["sideBar-id"].elements = this.cards.items;
     return (
       <main className="conteudo">
         <SearchBar addNewCard={this.addNewCard.bind(this)} />
-        <CustomDragDropContext column={columns["sideBar"]}>
+        <CustomDragDropContext column={columns["sideBar-id"]}>
           <section className="conteudo__principal">
             <SideBar
               cards={this.cards}

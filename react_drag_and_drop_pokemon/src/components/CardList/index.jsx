@@ -29,7 +29,7 @@ class CardList extends Component {
     const { cards } = this.state;
     const { changeModalStatus } = this.props;
     return (
-      <CustomDroppable droppableId={columns["sideBar"].id}>
+      <CustomDroppable droppableId={columns["sideBar-id"].id}>
         <div className="conteudo__principal__sideBar__cardList">
           {cards.map((card, index) => {
             return (
