@@ -73,7 +73,10 @@ class Home extends Component {
               cards={this.sideBarCards}
               changeModalStatus={this.changeModalStatus.bind(this)}
             />
-            <CardsContent columns={columns} />
+            <CardsContent
+              columns={columns}
+              changeModalStatus={this.changeModalStatus.bind(this)}
+            />
           </section>
         </CustomDragDropContext>
         <Modal

@@ -7,28 +7,8 @@ class SearchBar extends Component {
     super(props);
     this.state = {
       searchType: "text",
-      placeHolder: "Digite o nome do pokémon...",
-      searchValue: "",
+      searchValue: ""
     };
-  }
-
-  _handleChangeSearchType(event) {
-    const { value } = event.target;
-    const inputInfo = {
-      code: {
-        searchType: "number",
-        placeHolder: "Digite o número do pokémon...",
-      },
-      name: {
-        searchType: "text",
-        placeHolder: "Digite o nome do pokémon...",
-      },
-    };
-    const { searchType, placeHolder } = inputInfo[value];
-    this.setState({
-      searchType,
-      placeHolder,
-    });
   }
 
   _handleInputValue(event) {
@@ -54,16 +34,9 @@ class SearchBar extends Component {
         />
         <form className="conteudo__searchBar__search">
           <label>Procurar por: </label>
-          <select
-            className="conteudo__searchBar__search__select"
-            onChange={this._handleChangeSearchType.bind(this)}
-          >
-            <option value="name">Nome</option>
-            <option value="code">Número</option>
-          </select>
           <input
             type={this.state.searchType}
-            placeholder={this.state.placeHolder}
+            placeholder={`Digite o nome ou número do pokémon...`}
             onChange={this._handleInputValue.bind(this)}
             className="conteudo__searchBar__search__input"
           />

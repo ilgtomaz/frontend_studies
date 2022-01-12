@@ -8,7 +8,6 @@
   padding: 10px;
   position: absolute;
   width: 100%;
-  z-index: 1;
 }
 
 .conteudo__searchBar__logo {
@@ -25,6 +24,7 @@
 
 .conteudo__searchBar__search label {
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .conteudo__searchBar__search__select,

@@ -20,7 +20,9 @@ class CustomDragDropContext extends Component {
     const start = columns[source.droppableId];
     const finish = columns[destination.droppableId];
     const startElementsId = start.getElementsIds();
+    const finishElementsId = finish.getElementsIds();
     const cards = start.elements;
+    const searchedFinishCards = start.elements.concat(finish.elements);
 
     if (start === finish) {
       startElementsId.splice(source.index, 1);
@@ -39,13 +41,17 @@ class CustomDragDropContext extends Component {
     startElementsId.splice(source.index, 1);
     const startCards = startElementsId.map(id => {
       return cards.find(element => element.uniqueId === id);
-    });
+    }).filter(Boolean);
     start.elements = startCards;
     start.card.items = startCards;
     start.card.notify();
 
-    const newCard = cards.find(element => element.uniqueId === draggableId);
-    finish.card.addNewAlreadyCreatedCard(newCard);
+    finishElementsId.splice(destination.index, 0, draggableId);
+    const finishCards = finishElementsId.map(id => {
+      return searchedFinishCards.find(element => element.uniqueId === id);
+    }).filter(Boolean);
+    finish.elements = finishCards;
+    finish.card.items = finishCards;
     finish.card.notify();
   }
 

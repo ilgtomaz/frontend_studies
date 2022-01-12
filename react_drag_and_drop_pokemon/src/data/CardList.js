@@ -3,30 +3,29 @@ import axios from "axios";
 export class CardList {
   constructor(addNewAlert) {
     this.items = [];
+    this.createdCards = [];
     this._inscritos = [];
     this.addNewAlert = addNewAlert;
   }
 
   addNewCard(data) {
     const newCard = new Card(data);
-    const isAlreadyAddedCard = this.items.find(
+    const isAlreadyAddedCard = this.createdCards.find(
       (item) => item.id === newCard.id
     );
 
     if (!isAlreadyAddedCard) {
       this.items.push(newCard);
+      this.createdCards.push(newCard);
       this.notify();
-    } else {
-      this.addNewAlert({
-        message: `Pokémon #${newCard.id} já adicionado`,
-        type: "warning",
-        name: "pokemon_already_exists",
-      });
+      return;
     }
-  }
 
-  addNewAlreadyCreatedCard(card) {
-    this.items.push(card);
+    this.addNewAlert({
+      message: `Pokémon #${newCard.id} já adicionado`,
+      type: "warning",
+      name: "pokemon_already_exists",
+    });
   }
 
   subscribe(callback) {

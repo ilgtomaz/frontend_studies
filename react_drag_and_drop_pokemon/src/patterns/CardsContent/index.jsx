@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Title from "../../components/Title";
 import CustomDroppable from "../../components/CustomDroppable";
+import Card from "../Card";
 import "./style.css";
 
 class CardsContent extends Component {
   constructor(props) {
     super(props);
-    this.state = { usingCards: [], usedCards: [] }
+    this.state = { usingCards: [], usedCards: [] };
     this._addNewUsingCards = this._addNewUsingCards.bind(this);
     this._addNewUsedCards = this._addNewUsedCards.bind(this);
   }
@@ -24,29 +25,50 @@ class CardsContent extends Component {
   }
 
   _addNewUsingCards(usingCards) {
-    this.setState({ ...this.state, usingCards });
+    this.setState({ usingCards });
   }
 
   _addNewUsedCards(usedCards) {
-    this.setState({ ...this.state, usedCards });
+    this.setState({ usedCards });
   }
 
   render() {
-    const { columns } = this.props;
+    const { columns, changeModalStatus } = this.props;
+    const columnCardsContent1 = columns["cardsContent-id-1"];
+    const columnCardsContent2 = columns["cardsContent-id-2"];
+
     return (
       <section className="conteudo__principal__cardsContent">
         <header className="conteudo__principal__cardsContent__header">
-          <Title content={`Cards Content`} />
+          <Title content={`Cards Drops`} />
         </header>
         <section className="conteudo__principal__cardsContent__main">
-          <CustomDroppable droppableId={columns["cardsContent-id-1"].id}>
+          <CustomDroppable droppableId={columnCardsContent1.id}>
             <section className="conteudo__principal__cardsContent__using">
-              quadro_1
+              {this.state.usingCards.map((card, index) => {
+                return (
+                  <Card
+                    key={card.uniqueId}
+                    card={card}
+                    index={index}
+                    changeModalStatus={changeModalStatus}
+                  />
+                );
+              })}
             </section>
           </CustomDroppable>
-          <CustomDroppable droppableId={columns["cardsContent-id-2"].id}>
+          <CustomDroppable droppableId={columnCardsContent2.id}>
             <section className="conteudo__principal__cardsContent__used">
-              quadro_2
+              {this.state.usedCards.map((card, index) => {
+                return (
+                  <Card
+                    key={card.uniqueId}
+                    card={card}
+                    index={index}
+                    changeModalStatus={changeModalStatus}
+                  />
+                );
+              })}
             </section>
           </CustomDroppable>
         </section>

@@ -11,6 +11,7 @@
   position: relative;
   transition: border-radius 400ms;
   width: 90%;
+  max-width: 415px;
 }
 
 .conteudo__principal__sideBar__card:hover {
@@ -31,7 +32,6 @@
   margin-right: 5px;
   right: 0;
   width: 180px;
-  z-index: 1;
 }
 
 .conteudo__principal__sideBar__card__logo path {
