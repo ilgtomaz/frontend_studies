@@ -1,10 +1,35 @@
 .conteudo__principal__cardsContent {
-  background-color: lightblue;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin-left: 30%;
   margin-top: 150px;
   overflow: auto;
   position: fixed;
   width: 70%;
   z-index: -1;
+}
+
+.conteudo__principal__cardsContent__header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.conteudo__principal__cardsContent__main {
+  display: flex;
+  height: 100%;
+}
+
+.conteudo__principal__cardsContent__using {
+  background-color: lightblue;
+  height: 100%;
+  width: 50%;
+}
+
+.conteudo__principal__cardsContent__used {
+  background-color: coral;
+  height: 100%;
+  width: 50%;
 }

@@ -13,7 +13,7 @@ class Home extends Component {
   constructor() {
     super();
     this.addNewAlerts = this.addNewAlerts.bind(this);
-    this.cards = new CardList(this.addNewAlerts);
+    this.sideBarCards = new CardList(this.addNewAlerts);
     this.state = { alerts: [], isShow: false, card: {} };
     this.modalRef = createRef(null);
   }
@@ -33,7 +33,7 @@ class Home extends Component {
 
   addNewCard(data) {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${data}/`).then((result) => {
-      this.cards.addNewCard(result.data);
+      this.sideBarCards.addNewCard(result.data);
     });
   }
 
@@ -56,15 +56,15 @@ class Home extends Component {
   }
 
   render() {
-    columns["sideBar-id"].card = this.cards;
-    columns["sideBar-id"].elements = this.cards.items;
+    columns["sideBar-id"].card = this.sideBarCards;
+    columns["sideBar-id"].elements = this.sideBarCards.items;
     return (
       <main className="conteudo">
         <SearchBar addNewCard={this.addNewCard.bind(this)} />
         <CustomDragDropContext column={columns["sideBar-id"]}>
           <section className="conteudo__principal">
             <SideBar
-              cards={this.cards}
+              cards={this.sideBarCards}
               changeModalStatus={this.changeModalStatus.bind(this)}
             />
             <CardsContent />

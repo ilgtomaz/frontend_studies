@@ -11,3 +11,7 @@
   top: 0;
   width: 30%;
 }
+
+.conteudo__principal__sideBar p {
+  margin-top: 10px;
+}
