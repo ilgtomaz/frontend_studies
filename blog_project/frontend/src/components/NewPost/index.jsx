@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography } from "@material-ui/core";
 import { containerStyle } from "../../App";
-import FormularioNovoPost from "../FormularioNovoPost";
+import FormNewPost from "../FormNewPost";
 import Menu from "../Menu";
 
 function NovoPost() {
@@ -19,7 +19,7 @@ function NovoPost() {
         >
           Novo Post
         </Typography>
-        <FormularioNovoPost />
+        <FormNewPost />
       </Container>
     </>
   );
