@@ -6,9 +6,9 @@ export class Post1642441301138 implements MigrationInterface {
         await queryRunner.query(`
             CREATE TABLE IF NOT EXISTS post (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                titulo VARCHAR,
-                autor VARCHAR,
-                texto VARCHAR
+                title VARCHAR,
+                author VARCHAR,
+                text VARCHAR
             );
         `);
     }

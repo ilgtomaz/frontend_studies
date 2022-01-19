@@ -1,5 +1,5 @@
 export interface Post {
-  titulo: string;
-  autor: string;
-  texto: string;
+  title: string;
+  author: string;
+  text: string;
 }

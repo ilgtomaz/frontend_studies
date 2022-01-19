@@ -16,13 +16,13 @@ export class PostController {
 
   async post(request: Request, response: Response) {
     const connection = await getUsedConnection();
-    const { titulo, autor, texto } = request.body;
+    const { title, author, text } = request.body;
 
     try {
       const result = await connection.getRepository(PostEntity).insert({
-        titulo,
-        autor,
-        texto
+        title,
+        author,
+        text
       });
       const { identifiers } = result;
       const id = identifiers[0].id
@@ -36,13 +36,13 @@ export class PostController {
   async update(request: Request, response: Response) {
     const connection = await getUsedConnection();
     const { id } = request.params;
-    const { titulo, autor, texto } = request.body;
+    const { title, author, text } = request.body;
 
     try {
       await connection.getRepository(PostEntity).update(id, {
-        titulo,
-        autor,
-        texto
+        title,
+        author,
+        text
       });
       response.status(200).json({ message: `Postagem atualizada com sucesso.`});
     } catch (error) {
@@ -65,6 +65,6 @@ export class PostController {
       }
     }
 
-    return response.status(404).json({ mensagem: 'Post não encontrado.' });
+    return response.status(404).json({ message: 'Post não encontrado.' });
   }
 }

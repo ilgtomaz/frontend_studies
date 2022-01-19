@@ -6,7 +6,7 @@ export const getUsedConnection = async () => {
   let connection: Connection;
 
   try {
-    connection = getConnection("sqlite_post");
+    connection = getConnection();
     
     if (connection.isConnected) {
       return connection;
@@ -14,7 +14,6 @@ export const getUsedConnection = async () => {
   } catch(error) {
     return await createConnection(ormConfig);
   }
-
     connection = await createConnection(ormConfig);
     return connection;
 }

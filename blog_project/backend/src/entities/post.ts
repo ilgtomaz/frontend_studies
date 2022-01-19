@@ -11,15 +11,15 @@ export class PostEntity {
   @Column({
     type: 'varchar'
   })
-  titulo: string = '';
+  title: string = '';
 
   @Column({
     type: 'varchar'
   })
-  autor: string = '';
+  author: string = '';
 
   @Column({
     type: 'varchar'
   })
-  texto: string = '';
+  text: string = '';
 }
