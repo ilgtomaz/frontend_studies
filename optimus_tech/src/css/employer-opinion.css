@@ -1,0 +1,70 @@
+.employer-opinion {
+  align-items: center;
+  background-color: rgba(196, 25, 25, 0.03);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
+  padding: 64px;
+}
+
+.employer-opinion__title {
+  color: #8E2424;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.employer-opinion__content {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.employer-opinion__perfil {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.employer-opinion__perfil__img {
+  height: 56px;
+  margin-bottom: 16px;
+  width: 56px;
+}
+
+.employer-opinion__perfil__name {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.employer-opinion__perfil__job {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .employer-opinion {
+    padding: 30px;
+  }
+
+  .employer-opinion__title {
+    margin-bottom: 25px;
+  }
+
+  .employer-opinion {
+    margin-bottom: 40px;
+  }
+}

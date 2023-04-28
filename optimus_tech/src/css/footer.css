@@ -1,0 +1,81 @@
+.footer {
+  align-items: center;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0;
+  width: 100%;
+}
+
+.footer__follow-our-opportunities {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer__be-the-first {
+  color: #667085;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer__register-email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__register-email__input {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  display: flex;
+  padding: 12px 14px 12px 16px;
+  width: 360px;
+}
+
+.footer__register-email__button {
+  align-self: center;
+  background: #8E2424;
+  border: 1px solid #8E2424;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 24px;
+  margin-left: 16px;
+  padding: 12px 20px;
+  width: 116px;
+}
+
+.footer__all-reserved-rights {
+  align-items: center;
+  color: #98A2B3;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 24px;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer__be-the-first {
+    margin-bottom: 20px;
+  }
+}
